@@ -1,10 +1,4 @@
-import { useState } from 'react'
-
 const Contact = () => {
-  const [formData, setFormData] = useState({ name: '', phone: '', email: '', message: '' })
-  const handleChange = (e) => setFormData({ ...formData, [e.target.name]: e.target.value })
-  const handleSubmit = (e) => { e.preventDefault(); alert(`Thank you, ${formData.name}! We've received your message and will contact you soon at ${formData.phone} or ${formData.email}.`); setFormData({ name: '', phone: '', email: '', message: '' }) }
-
   return (
     <section id="contact" className="contact-section">
       <div className="container">
@@ -17,29 +11,6 @@ const Contact = () => {
         <div className="contact-quote"><i className="fas fa-quote-left"></i><p>"Start Today. Not Tomorrow."</p><i className="fas fa-quote-right"></i></div>
 
         <div className="contact-content">
-          <div className="contact-form-container glass-card">
-            <h3>Send Us a Message</h3>
-            <form onSubmit={handleSubmit} className="contact-form">
-              <div className="form-group">
-                <label htmlFor="name"><i className="fas fa-user"></i> Name</label>
-                <input type="text" id="name" name="name" value={formData.name} onChange={handleChange} required placeholder="Your full name" />
-              </div>
-              <div className="form-group">
-                <label htmlFor="phone"><i className="fas fa-phone"></i> Phone</label>
-                <input type="tel" id="phone" name="phone" value={formData.phone} onChange={handleChange} required placeholder="Your phone number" />
-              </div>
-              <div className="form-group">
-                <label htmlFor="email"><i className="fas fa-envelope"></i> Email</label>
-                <input type="email" id="email" name="email" value={formData.email} onChange={handleChange} required placeholder="your.email@example.com" />
-              </div>
-              <div className="form-group">
-                <label htmlFor="message"><i className="fas fa-comment"></i> Message</label>
-                <textarea id="message" name="message" value={formData.message} onChange={handleChange} rows="5" required placeholder="Tell us about your fitness goals..."></textarea>
-              </div>
-              <button type="submit" className="submit-btn glow-btn"><i className="fas fa-paper-plane"></i> Send Message</button>
-            </form>
-          </div>
-
           <div className="contact-info-container">
             <div className="contact-info glass-card">
               <h3>Visit Us</h3>
@@ -67,7 +38,7 @@ const Contact = () => {
         <div className="map-container glass-card">
           <h3><i className="fas fa-map"></i> Find Us on Map</h3>
           <div className="map-wrapper">
-            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3887.879278473845!2d77.6081044!3d12.9716!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMTLCsDU4JzE3LjgiTiA3N8KwMzYnMjkuMiJF!5e0!3m2!1sen!2sin!4v1234567890" width="100%" height="400" style={{ border: 0 }} allowFullScreen="" loading="lazy" title="Flexxwell Fitness Location"></iframe>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d10159.116979502023!2d77.34494371666256!3d28.55540136361657!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390ce59294364cb3%3A0x7f339823d97ef392!2sPower%20point%20unisex%20gym!5e0!3m2!1sen!2sin!4v1769350783116!5m2!1sen!2sin" width="100%" height="400" style={{ border: 0 }} allowFullScreen="" loading="lazy" title="Flexxwell Fitness Location"></iframe>
           </div>
         </div>
       </div>

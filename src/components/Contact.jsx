@@ -151,15 +151,7 @@ const Contact = () => {
         <div className="map-container glass-card">
           <h3><i className="fas fa-map"></i> Find Us on Map</h3>
           <div className="map-wrapper">
-            <iframe
-              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3887.879278473845!2d77.6081044!3d12.9716!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMTLCsDU4JzE3LjgiTiA3N8KwMzYnMjkuMiJF!5e0!3m2!1sen!2sin!4v1234567890"
-              width="100%"
-              height="400"
-              style={{ border: 0 }}
-              allowFullScreen=""
-              loading="lazy"
-              title="Flexxwell Fitness Location"
-            ></iframe>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d10159.116979502023!2d77.34494371666256!3d28.55540136361657!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390ce59294364cb3%3A0x7f339823d97ef392!2sPower%20point%20unisex%20gym!5e0!3m2!1sen!2sin!4v1769350783116!5m2!1sen!2sin" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
           </div>
         </div>
       </div>
