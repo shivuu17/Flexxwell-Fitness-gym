@@ -1,4 +1,53 @@
+import { useState, useEffect, useRef } from 'react'
+
 const About = () => {
+  const [counts, setCounts] = useState({
+    members: 0,
+    trainers: 0,
+    years: 0,
+    success: 0
+  })
+  const [hasAnimated, setHasAnimated] = useState(false)
+  const statsRef = useRef(null)
+
+  useEffect(() => {
+    const observer = new IntersectionObserver(
+      (entries) => {
+        if (entries[0].isIntersecting && !hasAnimated) {
+          animateCounters()
+          setHasAnimated(true)
+        }
+      },
+      { threshold: 0.5 }
+    )
+
+    if (statsRef.current) {
+      observer.observe(statsRef.current)
+    }
+
+    return () => observer.disconnect()
+  }, [hasAnimated])
+
+  const animateCounters = () => {
+    const targets = { members: 5000, trainers: 50, years: 12, success: 100 }
+    const duration = 2000
+    const steps = 60
+
+    Object.keys(targets).forEach((key) => {
+      const increment = targets[key] / steps
+      let current = 0
+      const timer = setInterval(() => {
+        current += increment
+        if (current >= targets[key]) {
+          setCounts(prev => ({ ...prev, [key]: targets[key] }))
+          clearInterval(timer)
+        } else {
+          setCounts(prev => ({ ...prev, [key]: Math.floor(current) }))
+        }
+      }, duration / steps)
+    })
+  }
+
   const coaches = [
     {
       name: "Rajesh Kumar",
@@ -40,6 +89,25 @@ const About = () => {
           <span className="section-tag">Who We Are</span>
           <h2 className="section-title">ABOUT <span className="neon-text">FLEXXWELL</span></h2>
           <div className="title-underline"></div>
+        </div>
+
+        <div className="stats-counter" ref={statsRef}>
+          <div className="stat-item">
+            <div className="stat-number">{counts.members}</div>
+            <div className="stat-label">Active Members</div>
+          </div>
+          <div className="stat-item">
+            <div className="stat-number">{counts.trainers}</div>
+            <div className="stat-label">Expert Trainers</div>
+          </div>
+          <div className="stat-item">
+            <div className="stat-number">{counts.years}</div>
+            <div className="stat-label">Years Experience</div>
+          </div>
+          <div className="stat-item">
+            <div className="stat-number">{counts.success}</div>
+            <div className="stat-label">Success Rate %</div>
+          </div>
         </div>
 
         <div className="about-content">

@@ -336,12 +336,15 @@ body {
     flex-wrap: wrap;
     margin-bottom: 40px;
     font-size: 16px;
-    color: var(--text-secondary);
+    color: var(--text-primary);
+    font-weight: 600;
     animation: fadeIn 2s ease;
+    letter-spacing: 0.5px;
 }
 
 .hero-highlights span {
     color: var(--neon-red);
+    font-weight: 700;
 }
 
 .hero-buttons {
@@ -402,21 +405,31 @@ body {
     color: var(--neon-blue);
     font-style: italic;
     opacity: 0.8;
+    text-align: center;
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 /* Stats Counter */
 .stats-counter {
-    position: absolute;
-    bottom: 50px;
-    left: 50%;
-    transform: translateX(-50%);
+    position: relative;
     display: flex;
+    justify-content: center;
     gap: 80px;
-    z-index: 3;
+    margin: 50px 0;
+    background: rgba(10, 10, 10, 0.8);
+    backdrop-filter: blur(10px);
+    padding: 30px 50px;
+    border-radius: 15px;
+    border: 1px solid rgba(255, 8, 68, 0.3);
 }
 
 .stat-item {
     text-align: center;
+    background: none;
+    border: none;
+    box-shadow: none;
 }
 
 .stat-number {
