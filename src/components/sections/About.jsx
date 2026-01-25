@@ -1,0 +1,100 @@
+const About = () => {
+  const coaches = [
+    {
+      name: "Rajesh Kumar",
+      specialization: "Strength & Conditioning",
+      description: "15+ years of bodybuilding expertise",
+      image: "https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?w=400"
+    },
+    {
+      name: "Priya Sharma",
+      specialization: "Yoga & Flexibility",
+      description: "Certified yoga instructor & nutritionist",
+      image: "https://images.unsplash.com/photo-1594381898411-846e7d193883?w=400"
+    },
+    {
+      name: "Arjun Singh",
+      specialization: "CrossFit & HIIT",
+      description: "Champion athlete & fitness coach",
+      image: "https://images.unsplash.com/photo-1567013127542-490d757e51fc?w=400"
+    },
+    {
+      name: "Neha Patel",
+      specialization: "Zumba & Dance Fitness",
+      description: "Energy, rhythm, and transformation",
+      image: "https://images.unsplash.com/photo-1518611012118-696072aa579a?w=400"
+    }
+  ]
+
+  const values = [
+    { icon: "heart", title: "Inclusivity", description: "LGBTQ+ friendly space where everyone belongs" },
+    { icon: "trophy", title: "Excellence", description: "Premium equipment and expert training" },
+    { icon: "users", title: "Community", description: "Building lasting connections and support" },
+    { icon: "shield-alt", title: "Safety", description: "Clean facilities with modern amenities" }
+  ]
+
+  return (
+    <section id="about" className="about-section">
+      <div className="container">
+        <div className="section-header">
+          <span className="section-tag">Who We Are</span>
+          <h2 className="section-title">ABOUT <span className="neon-text">FLEXXWELL</span></h2>
+          <div className="title-underline"></div>
+        </div>
+
+        <div className="about-content">
+          <div className="about-story glass-card">
+            <h3>Our Story</h3>
+            <p>Founded with a passion for transforming lives, Flexxwell Fitness has been at the forefront of premium fitness training for over a decade. We believe in creating a community where everyone, regardless of their fitness level, can achieve their goals in a supportive and inclusive environment.</p>
+
+            <div className="motivational-banner">
+              <i className="fas fa-quote-left"></i>
+              <p>"Success isn't always about greatness. It's about consistency."</p>
+              <i className="fas fa-quote-right"></i>
+            </div>
+
+            <h3>Our Mission</h3>
+            <p>To empower individuals to reach their peak physical potential through expert guidance, state-of-the-art facilities, and personalized training programs. We're committed to making fitness accessible and enjoyable for everyone.</p>
+
+            <h3>Our Values</h3>
+            <div className="values-grid">
+              {values.map((value, index) => (
+                <div key={index} className="value-item">
+                  <i className={`fas fa-${value.icon}`}></i>
+                  <h4>{value.title}</h4>
+                  <p>{value.description}</p>
+                </div>
+              ))}
+            </div>
+          </div>
+
+          <div className="coaches-section">
+            <h3>Meet Our Expert Trainers</h3>
+            <div className="coaches-grid">
+              {coaches.map((coach, index) => (
+                <div key={index} className="coach-card">
+                  <div className="coach-img">
+                    <img src={coach.image} alt={coach.name} />
+                    <div className="coach-overlay">
+                      <div className="social-links">
+                        <a href="#"><i className="fab fa-instagram"></i></a>
+                        <a href="#"><i className="fab fa-facebook"></i></a>
+                      </div>
+                    </div>
+                  </div>
+                  <div className="coach-info">
+                    <h4>{coach.name}</h4>
+                    <p className="specialization">{coach.specialization}</p>
+                    <p className="coach-desc">{coach.description}</p>
+                  </div>
+                </div>
+              ))}
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  )
+}
+
+export default About
