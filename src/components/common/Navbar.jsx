@@ -39,7 +39,7 @@ const Navbar = () => {
       <div className="nav-container">
         <div className="logo">
           <i className={`fas fa-dumbbell ${scrollingUp ? 'dumbbell-rotate-half' : ''}`}></i>
-          <span>FLEXXWELL FITNESS</span>
+          <span>SK Body-First-Gym</span>
         </div>
         <div className={`nav-menu ${menuOpen ? 'active' : ''}`}>
           <span className="nav-link" onClick={() => scrollToSection('home')}>Home</span>
