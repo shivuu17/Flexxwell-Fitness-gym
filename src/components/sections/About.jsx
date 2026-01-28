@@ -29,7 +29,7 @@ const About = () => {
   }, [hasAnimated])
 
   const animateCounters = () => {
-    const targets = { members: 5000, trainers: 50, years: 12, success: 100 }
+    const targets = { members: 500, trainers: 5, years: 10, success: 95 }
     const duration = 2000
     const steps = 60
 
@@ -113,7 +113,7 @@ const About = () => {
         <div className="about-content">
           <div className="about-story glass-card">
             <h3>Our Story</h3>
-            <p>Founded with a passion for transforming lives, Flexxwell Fitness has been at the forefront of premium fitness training for over a decade. We believe in creating a community where everyone, regardless of their fitness level, can achieve their goals in a supportive and inclusive environment.</p>
+            <p>Founded with a passion for transforming lives, SK body First GYM has been at the forefront of premium fitness training for over a decade. We believe in creating a community where everyone, regardless of their fitness level, can achieve their goals in a supportive and inclusive environment.</p>
 
             <div className="motivational-banner">
               <i className="fas fa-quote-left"></i>

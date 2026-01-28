@@ -47,7 +47,6 @@ const Navbar = () => {
           <span className="nav-link" onClick={() => scrollToSection('services')}>Services</span>
           <span className="nav-link" onClick={() => scrollToSection('gallery')}>Gallery</span>
           <span className="nav-link" onClick={() => scrollToSection('plans')}>Plans</span>
-          <span className="nav-link" onClick={() => scrollToSection('testimonials')}>Testimonials</span>
           <span className="nav-link" onClick={() => scrollToSection('contact')}>Contact</span>
           <button className="cta-btn" onClick={() => scrollToSection('contact')}>Join Now</button>
         </div>

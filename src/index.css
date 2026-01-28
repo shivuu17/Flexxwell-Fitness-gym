@@ -1463,6 +1463,96 @@ body {
     margin: 0;
 }
 
+/* Two-column layout for square cards */
+.contact-cards-wrapper {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 40px;
+    margin-bottom: 60px;
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+    align-items: start;
+    align-content: start;
+    width: 100%;
+}
+
+/* Square card styling */
+.square-card {
+    aspect-ratio: 1 / 1;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    border-radius: 20px;
+    background: var(--glass-bg);
+    border: 1px solid var(--glass-border);
+    transition: all 0.3s ease;
+    width: 100%;
+    height: auto;
+    margin: 0;
+    padding: 0;
+}
+
+.square-card:hover {
+    border-color: rgba(255, 8, 68, 0.3);
+    box-shadow: 0 10px 50px rgba(255, 8, 68, 0.2);
+    transform: translateY(-5px);
+}
+
+.contact-info.square-card {
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+
+.contact-info.square-card h3 {
+    margin-top: 0;
+    margin-bottom: 25px;
+    margin-left: 0;
+    margin-right: 0;
+    font-family: var(--font-heading);
+    font-size: 28px;
+    color: var(--neon-red);
+}
+
+.map-container.square-card {
+    padding: 0;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+}
+
+.map-container.square-card h3 {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    z-index: 10;
+    margin: 0;
+    font-size: 20px;
+    font-family: var(--font-heading);
+    color: var(--neon-red);
+    background: rgba(26, 26, 26, 0.95);
+    padding: 10px 18px;
+    border-radius: 10px;
+    backdrop-filter: blur(10px);
+}
+
+.map-wrapper-square {
+    width: 100%;
+    height: 100%;
+    border-radius: 20px;
+    overflow: hidden;
+    flex: 1;
+}
+
+.map-wrapper-square iframe {
+    width: 100% !important;
+    height: 100% !important;
+    border: none !important;
+}
+
 .contact-content {
     display: flex;
     justify-content: center;
@@ -1566,6 +1656,17 @@ body {
     padding: 30px;
 }
 
+.contact-info-grid {
+    display: flex;
+    flex-direction: column;
+    gap: 0;
+}
+
+.contact-info-left,
+.contact-info-right {
+    flex: 1;
+}
+
 .info-item {
     display: flex;
     align-items: flex-start;
@@ -1649,6 +1750,144 @@ body {
     border-radius: 15px;
     overflow: hidden;
     border: 3px solid var(--dark-border);
+}
+
+/* Google Find Us wrapper */
+.google-find-us-wrapper {
+    max-width: 1200px;
+    margin: 60px auto 0;
+    padding: 0 20px;
+}
+
+.google-find-us {
+    padding: 30px;
+    text-align: center;
+}
+
+.google-find-us .google-header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 12px;
+    margin-bottom: 20px;
+}
+
+.google-find-us .google-header i {
+    color: var(--neon-red);
+    font-size: 28px;
+}
+
+.google-find-us .google-header h3 {
+    margin: 0;
+}
+
+.google-find-us .google-description {
+    color: var(--text-secondary);
+    margin-bottom: 20px;
+    font-size: 14px;
+}
+
+.google-find-us .stars {
+    display: flex;
+    justify-content: center;
+    gap: 8px;
+    margin-bottom: 10px;
+}
+
+.google-find-us .stars i {
+    color: #ffd700;
+    font-size: 20px;
+}
+
+.google-find-us .rating-text {
+    display: block;
+    color: var(--neon-red);
+    font-weight: 700;
+    margin-bottom: 20px;
+    font-size: 16px;
+}
+
+.google-find-us .google-cta {
+    display: flex;
+    gap: 15px;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.google-find-us .btn-google,
+.google-find-us .btn-review {
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    padding: 12px 25px;
+    border-radius: 8px;
+    font-size: 14px;
+    font-weight: 600;
+    text-decoration: none;
+    transition: all 0.3s ease;
+    border: 2px solid;
+}
+
+.google-find-us .btn-google {
+    background: var(--gradient-red);
+    border-color: var(--neon-red);
+    color: white;
+}
+
+.google-find-us .btn-google:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 8px 25px rgba(255, 8, 68, 0.4);
+}
+
+.google-find-us .btn-review {
+    background: transparent;
+    border-color: var(--neon-blue);
+    color: var(--neon-blue);
+}
+
+.google-find-us .btn-review:hover {
+    background: rgba(0, 212, 255, 0.1);
+    transform: translateY(-2px);
+}
+
+/* Mobile responsive */
+@media (max-width: 768px) {
+    .contact-cards-wrapper {
+        grid-template-columns: 1fr;
+        gap: 25px;
+    }
+
+    .square-card {
+        aspect-ratio: 1 / 1;
+    }
+
+    .contact-info h3,
+    .map-container h3 {
+        font-size: 22px;
+    }
+
+    .contact-info {
+        padding: 20px;
+    }
+
+    .map-container.square-card h3 {
+        font-size: 18px;
+        top: 15px;
+        left: 15px;
+    }
+
+    .google-find-us-wrapper {
+        padding: 0 15px;
+    }
+
+    .google-find-us .google-cta {
+        flex-direction: column;
+    }
+
+    .google-find-us .btn-google,
+    .google-find-us .btn-review {
+        width: 100%;
+    }
 }
 
 /* ========== FOOTER ========== */

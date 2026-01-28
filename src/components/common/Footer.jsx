@@ -60,20 +60,20 @@ const Footer = () => {
             <ul className="footer-timings">
               <li>
                 <span>Monday - Friday</span>
-                <span>5:00 AM - 11:00 PM</span>
+                <span>6:00 AM - 10:00 PM</span>
               </li>
               <li>
                 <span>Saturday</span>
-                <span>5:00 AM - 11:00 PM</span>
+                <span>6:00 AM - 10:00 PM</span>
               </li>
               <li>
                 <span>Sunday</span>
-                <span>6:00 AM - 9:00 PM</span>
+                <span>6:00 AM - 10:00 PM</span>
               </li>
             </ul>
             <div className="footer-contact">
-              <p><i className="fas fa-phone"></i> +91 98765 43210</p>
-              <p><i className="fas fa-envelope"></i> info@flexxwell.com</p>
+              <p><i className="fas fa-phone"></i> +91 95824 61120 <br /> +91 87458 61120</p>
+              <p><i className="fas fa-envelope"></i> skbodyfirstgym@gmail.com</p>
             </div>
           </div>
         </div>
@@ -85,7 +85,7 @@ const Footer = () => {
             <i className="fas fa-quote-right"></i>
           </div>
           <p className="copyright">
-            &copy; 2026 Flexxwell Fitness. All Rights Reserved. | <a href="#">Privacy Policy</a> | <a href="#">Terms of Service</a>
+            &copy; 2026 SK Body-First-Gym. All Rights Reserved. | <a href="#">Privacy Policy</a> | <a href="#">Terms of Service</a>
           </p>
         </div>
       </div>
