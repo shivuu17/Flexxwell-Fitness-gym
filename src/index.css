@@ -1527,7 +1527,7 @@ body {
 .map-container.square-card h3 {
     position: absolute;
     top: 20px;
-    left: 20px;
+    right: 20px;
     z-index: 10;
     margin: 0;
     font-size: 20px;
@@ -1873,7 +1873,7 @@ body {
     .map-container.square-card h3 {
         font-size: 18px;
         top: 15px;
-        left: 15px;
+        right: 15px;
     }
 
     .google-find-us-wrapper {
