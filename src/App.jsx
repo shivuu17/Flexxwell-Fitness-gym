@@ -1,4 +1,5 @@
 import { useState, useEffect } from 'react'
+import { Analytics } from '@vercel/analytics/react'
 import Navbar from './components/common/Navbar'
 import Footer from './components/common/Footer'
 import FloatingButtons from './components/common/FloatingButtons'
@@ -26,6 +27,7 @@ function App() {
       <Contact />
       <Footer />
       <ScrollTop />
+      <Analytics />
     </div>
   )
 }
