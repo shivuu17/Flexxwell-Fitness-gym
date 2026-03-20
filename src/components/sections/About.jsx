@@ -75,6 +75,21 @@ const About = () => {
     }
   ]
 
+  const mainProfiles = [
+    {
+      name: 'Ashwani Chauhan',
+      role: 'Founder and Head Coach',
+      description: 'Leads the gym floor, member transformation plans, and the day-to-day coaching culture of SK Body-First-Gym.',
+      image: 'https://images.unsplash.com/photo-1567013127542-490d757e51fc?w=800'
+    },
+    {
+      name: 'Shekhar Thakur',
+      role: 'Operations and Member Support',
+      description: 'Handles member support, emergency coordination, and ensures a disciplined and welcoming training environment.',
+      image: 'https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?w=800'
+    }
+  ]
+
   const values = [
     { icon: "heart", title: "Inclusivity", description: "LGBTQ+ friendly space where everyone belongs" },
     { icon: "trophy", title: "Excellence", description: "Premium equipment and expert training" },
@@ -87,7 +102,7 @@ const About = () => {
       <div className="container">
         <div className="section-header">
           <span className="section-tag">Who We Are</span>
-          <h2 className="section-title">ABOUT <span className="neon-text">FLEXXWELL</span></h2>
+          <h2 className="section-title">ABOUT <span className="neon-text">SK Body-First-Gym</span></h2>
           <div className="title-underline"></div>
         </div>
 
@@ -134,6 +149,24 @@ const About = () => {
                 </div>
               ))}
             </div>
+            <div className="main-profile-section">
+              <h3>Main Profiles</h3>
+              <p className="main-profile-intro">Meet the key people behind the coaching culture and daily member experience at SK Body-First-Gym.</p>
+            <div className="main-profile-grid">
+              {mainProfiles.map((profile, index) => (
+                <article key={index} className="main-profile-card glass-card">
+                  <div className="main-profile-image-wrap">
+                    <img src={profile.image} alt={profile.name} className="main-profile-image" />
+                  </div>
+                  <div className="main-profile-content">
+                    <span className="main-profile-role">{profile.role}</span>
+                    <h4>{profile.name}</h4>
+                    <p>{profile.description}</p>
+                  </div>
+                </article>
+              ))}
+            </div>
+          </div>
           </div>
 
           <div className="coaches-section">

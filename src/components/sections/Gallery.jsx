@@ -64,9 +64,7 @@ const Gallery = () => {
           <button className={`filter-btn ${activeFilter === 'all' ? 'active' : ''}`} onClick={() => setActiveFilter('all')}>All</button>
           <button className={`filter-btn ${activeFilter === 'workout' ? 'active' : ''}`} onClick={() => setActiveFilter('workout')}>Workout Area</button>
           <button className={`filter-btn ${activeFilter === 'machines' ? 'active' : ''}`} onClick={() => setActiveFilter('machines')}>Machines</button>
-          <button className={`filter-btn ${activeFilter === 'trainers' ? 'active' : ''}`} onClick={() => setActiveFilter('trainers')}>Trainers</button>
-          <button className={`filter-btn ${activeFilter === 'members' ? 'active' : ''}`} onClick={() => setActiveFilter('members')}>Members</button>
-          <button className={`filter-btn ${activeFilter === 'events' ? 'active' : ''}`} onClick={() => setActiveFilter('events')}>Events</button>
+          
         </div>
 
         <div className="gallery-grid">

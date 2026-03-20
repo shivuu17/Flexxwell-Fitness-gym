@@ -12,13 +12,14 @@ const Hero = () => {
 
   return (
     <section id="home" className="hero">
+      <div className="hero-orb hero-orb-red"></div>
+      <div className="hero-orb hero-orb-blue"></div>
       <div className="hero-video-overlay"></div>
       <div className="hero-bg">
         <img src="https://images.unsplash.com/photo-1534438327276-14e5300c3a48?w=1920" alt="Gym Background" />
       </div>
       <div className="hero-content">
         <div className="hero-text">
-          <div className="quote-accent">"Train Hard. Stay Strong."</div>
           <h1 className="hero-title">
             UNLEASH YOUR<br />
             <span className="neon-text">INNER POWER</span>

@@ -3,6 +3,9 @@
   "version": "1.0.0",
   "description": "Premium modern gym website with React",
   "private": true,
+  "engines": {
+    "node": ">=20.19 <21 || >=22.12"
+  },
   "scripts": {
     "dev": "vite",
     "build": "vite build",

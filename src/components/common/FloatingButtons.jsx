@@ -15,7 +15,7 @@ const FloatingButtons = () => {
       <a onClick={scrollToContact} className="floating-join-btn" style={{ cursor: 'pointer' }}>
         <i className="fas fa-bolt"></i> Join Now
       </a>
-      <a href="https://wa.me/YOUR_PHONE_NUMBER" target="_blank" rel="noopener noreferrer" className="whatsapp-btn" title="Chat with us on WhatsApp">
+      <a href="https://wa.me/918745861120" target="_blank" rel="noopener noreferrer" className="whatsapp-btn" title="Chat with us on WhatsApp">
         <i className="fab fa-whatsapp"></i>
       </a>
     </>

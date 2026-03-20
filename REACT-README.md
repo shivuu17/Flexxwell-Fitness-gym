@@ -1,4 +1,4 @@
-# 🏋️ FLEXXWELL FITNESS - React Version
+# 🏋️ SK-Body-First-Gym - React Version
 
 ## Quick Start Guide
 

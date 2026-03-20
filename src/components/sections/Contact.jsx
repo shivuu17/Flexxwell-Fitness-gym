@@ -15,13 +15,14 @@ const Contact = () => {
             <h3>Visit Us</h3>
             <div className="contact-info-grid">
               <div className="contact-info-left">
-                <div className="info-item"><i className="fas fa-map-marker-alt"></i><div><h4>Address</h4><p>C-513 Value bazar Basement Sec-44<br />Noida, Uttar Pradesh 201301</p></div></div>
-                <div className="info-item"><i className="fas fa-phone"></i><div><h4>Phone</h4><p>+91 9582461120<br></br> +91 8745861120</p></div></div>
+                <div className="info-item"><i className="fas fa-map-marker-alt"></i><div><h4>Address</h4><p>C 513, near Ezee Go Supermarket, C Block,<br />Sector 44, Noida, Uttar Pradesh 201313</p></div></div>
+                <div className="info-item"><i className="fas fa-phone"></i><div><h4>Phone</h4><p>+91 8745861120<br />+91 8588805453</p></div></div>
               </div>
               <div className="contact-info-right">
-                <div className="info-item"><i className="fab fa-whatsapp"></i><div><h4>WhatsApp</h4><p>+91 9582461120</p></div></div>
+                <div className="info-item"><i className="fab fa-whatsapp"></i><div><h4>WhatsApp</h4><p>+91 8745861120 (Ashwani Chauhan)</p></div></div>
+                <div className="info-item"><i className="fas fa-phone-alt"></i><div><h4>Emergency</h4><p>+91 9582461120 (Shekhar Thakur)</p></div></div>
                 <div className="info-item"><i className="fas fa-envelope"></i><div><h4>Email</h4><p>skbodyfirstgym@gmail.com</p></div></div>
-                <div className="info-item"><i className="fas fa-clock"></i><div><h4>Opening Hours</h4><p>7 Days Gym Open <br /> Mon - Sat: 6:00 AM - 10:00 PM<br />Sunday: 6:00 AM - 10:00 PM</p></div></div>
+                <div className="info-item"><i className="fas fa-clock"></i><div><h4>Opening Hours</h4><p>7 Days Gym Open<br />Mon - Sat: 05:30 AM - 10:30 PM<br />Sunday: 05:30 AM - 10:30 PM</p></div></div>
               </div>
             </div>
           </div>

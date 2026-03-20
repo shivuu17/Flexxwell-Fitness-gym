@@ -16,8 +16,8 @@ const Footer = () => {
         <div className="footer-content">
           <div className="footer-col">
             <div className="footer-logo">
-              <i className="fas fa-dumbbell"></i>
-              <span>FLEXXWELL FITNESS</span>
+              <img src="/dumbbell.png" alt="SK Body First Gym logo" className="footer-logo-img" />
+              <span>SK Body-First-Gym</span>
             </div>
             <p className="footer-desc">
               Transform your body, transform your life. Join the ultimate fitness community and unleash your inner power.
@@ -59,20 +59,18 @@ const Footer = () => {
             <h4>Opening Hours</h4>
             <ul className="footer-timings">
               <li>
-                <span>Monday - Friday</span>
-                <span>6:00 AM - 10:00 PM</span>
-              </li>
-              <li>
-                <span>Saturday</span>
-                <span>6:00 AM - 10:00 PM</span>
+                <span>Mon - Sat</span>
+                <span>05:30 AM - 10:30 PM</span>
               </li>
               <li>
                 <span>Sunday</span>
-                <span>6:00 AM - 10:00 PM</span>
+                <span>05:30 AM - 10:30 PM</span>
               </li>
             </ul>
             <div className="footer-contact">
-              <p><i className="fas fa-phone"></i> +91 95824 61120 <br /> +91 87458 61120</p>
+              <p><i className="fas fa-phone"></i> +91 87458 61120</p>
+              <p><i className="fas fa-phone"></i> +91 85888 05453</p>
+              <p><i className="fas fa-phone"></i> Emergency: +91 95824 61120</p>
               <p><i className="fas fa-envelope"></i> skbodyfirstgym@gmail.com</p>
             </div>
           </div>
