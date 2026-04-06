@@ -11,6 +11,8 @@ build
 dist
 dist-ssr
 *.local
+.firebase/
+firebase-debug.log*
 
 # Misc
 .DS_Store

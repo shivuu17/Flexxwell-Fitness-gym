@@ -49,13 +49,12 @@ Flexxwell-Fitness-gym/
 │   ├── App.jsx
 │   ├── main.jsx
 │   └── index.css
-├── index-react.html             # React/Vite entry html (dev + build)
-├── index.html                   # Legacy static page (kept for reference)
-├── public/
-│   ├── dumbbell.svg             # Favicon/logo used by index-react.html
-│   └── gallery/README.md        # Drop gallery images here
+├── index.html                   # React/Vite entry html (dev + build)
 ├── legacy/
 │   └── index.html               # Frozen static HTML reference (uses ../styles.css & ../script.js)
+├── public/
+│   ├── dumbbell.svg             # Favicon/logo used by index.html
+│   └── gallery/README.md        # Drop gallery images here
 ├── styles.css                   # Legacy CSS (kept for reference)
 ├── script.js                    # Legacy JS (kept for reference)
 ├── package.json

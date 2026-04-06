@@ -112,13 +112,12 @@ Flexxwell-Fitness-gym/
 │   └── components/
 │       ├── common/     # Navbar, Footer, FloatingButtons, ScrollTop
 │       └── sections/   # Hero, About, Services, Gallery, Plans, Testimonials, Contact
-├── index-react.html    # React/Vite entry html used for dev/build
-├── index.html          # Legacy static page (kept for reference)
+├── index.html          # React/Vite entry html used for dev/build
+├── legacy/
+│   └── index.html      # Frozen static HTML reference (loads ../styles.css and ../script.js)
 ├── public/
 │   ├── dumbbell.svg    # Favicon/logo
 │   └── gallery/        # Drop gallery images (served at /gallery/...)
-├── legacy/
-│   └── index.html      # Frozen static HTML reference (loads ../styles.css and ../script.js)
 ├── styles.css          # Legacy static CSS (reference only)
 ├── script.js           # Legacy static JS (reference only)
 ├── package.json
@@ -133,7 +132,7 @@ Flexxwell-Fitness-gym/
    npm install
    ```
 
-2. **Run the dev server** (opens `index-react.html` automatically)
+2. **Run the dev server** (opens `index.html` automatically)
    ```bash
    npm run dev
    ```
@@ -164,6 +163,30 @@ Flexxwell-Fitness-gym/
 - **Netlify / Vercel**: run `npm run build` and deploy the `dist/` folder
 - **Static hosting**: upload `dist/` contents to your host after `npm run build`
 - **GitHub Pages**: build, then deploy `dist/` to `gh-pages` (or use an action)
+
+## Firebase Hosting
+
+This project is ready for Firebase Hosting with a Vite SPA build output.
+
+### Setup
+1. Install the Firebase CLI if you do not already have it:
+   ```bash
+   npm install -g firebase-tools
+   ```
+2. Log in to Firebase:
+   ```bash
+   firebase login
+   ```
+3. Replace the placeholder project ID in [/.firebaserc](.firebaserc) with your Firebase project ID.
+4. Deploy the app:
+   ```bash
+   npm run deploy:firebase
+   ```
+
+### Files Added
+- [firebase.json](firebase.json) configures Hosting to serve `dist/` and rewrites all routes to `index.html` for SPA support.
+- [/.firebaserc](.firebaserc) stores the default Firebase project ID.
+- [package.json](package.json) includes a `deploy:firebase` script for one-command deploys.
 
 ## 📱 Responsive Design
 

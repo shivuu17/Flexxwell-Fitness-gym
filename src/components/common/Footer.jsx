@@ -16,7 +16,7 @@ const Footer = () => {
         <div className="footer-content">
           <div className="footer-col">
             <div className="footer-logo">
-              <img src="/dumbbell.png" alt="SK Body First Gym logo" className="footer-logo-img" />
+              <img src="/dumbell.png" alt="SK Body First Gym logo" className="footer-logo-img" />
               <span>SK Body-First-Gym</span>
             </div>
             <p className="footer-desc">
